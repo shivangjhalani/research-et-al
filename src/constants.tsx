@@ -8,6 +8,7 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     path: "/",
     icon: <Icon icon="lucide:home" width="24" height="24" />,
   },
+
   {
     title: "Publications",
     path: "/publications",
@@ -20,6 +21,11 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     ],
   },
   {
+    title: "ThesisReports",
+    path: "/thesis-reports",
+    icon: <Icon icon="lucide:scroll-text" width="24" height="24" />,
+  },
+  {
     title: "Events",
     path: "/events",
     icon: <Icon icon="lucide:calendar-days" width="24" height="24" />,
@@ -27,6 +33,18 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     subMenuItems: [
       { title: "Conferences", path: "/events/conferences" },
       { title: "Workshops", path: "/events/workshops" },
+    ],
+  },
+  {
+    title: "Labs",
+    path: "/research-labs",
+    icon: <Icon icon="lucide:flask-conical" width="24" height="24" />,
+    submenu: true,
+    subMenuItems: [
+      { title: "A", path: "/research-labs/a" },
+      { title: "B", path: "/research-labs/b" },
+      { title: "C", path: "/research-labs/c" },
+      { title: "D", path: "/research-labs/d" },
     ],
   },
   {
