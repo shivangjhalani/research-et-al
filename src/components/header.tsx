@@ -14,21 +14,21 @@ const Header = () => {
 
   return (
     <div
-      className={cn(`sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-gray-200`, {
-        "border-b border-gray-200 bg-white/75 backdrop-blur-lg": scrolled,
-        "border-b border-gray-200 bg-white": selectedLayout,
+      className={cn(`sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-gray-500`, {
+        "border-b border-gray-500 bg-zinc-900 backdrop-blur-lg": scrolled,
+        "border-b border-gray-500 bg-zinc-900": selectedLayout,
       })}
     >
-      <div className="flex h-[47px] items-center justify-between px-4">
+      <div className="flex h-[47px] items-center justify-between px-4 bg-zinc-900">
         <div className="flex items-center space-x-4">
           <Link href="/" className="flex flex-row space-x-3 items-center justify-center md:hidden">
-            <span className="h-7 w-7 bg-zinc-300 rounded-lg" />
+            <span className="h-7 w-7 bg-violet-500 rounded-lg" />
             <span className="font-bold text-xl flex ">PES University</span>
           </Link>
         </div>
 
         <div className="hidden md:block">
-          <div className="h-8 w-16 rounded-full bg-zinc-300 flex items-center justify-center text-center">
+          <div className="h-8 w-16 rounded-full bg-violet-500 flex items-center justify-center text-center">
             <span className="font-semibold text-sm">et-AL</span>
           </div>
         </div>

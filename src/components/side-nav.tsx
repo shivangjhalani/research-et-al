@@ -11,10 +11,10 @@ import { Icon } from "@iconify/react";
 
 const SideNav = () => {
   return (
-    <div className="md:w-60 bg-white h-screen flex-1 fixed border-r border-zinc-200 hidden md:flex">
+    <div className="md:w-60 bg-zinc-900 h-screen flex-1 fixed border-r border-gray-500 hidden md:flex">
       <div className="flex flex-col space-y-6 w-full">
-        <Link href="/" className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-zinc-200 h-12 w-full">
-          <span className="h-7 w-7 bg-zinc-300 rounded-lg" />
+        <Link href="/" className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-gray-500 h-12 w-full">
+          <span className="h-7 w-7 bg-violet-500 rounded-lg" />
           <span className="font-bold text-xl hidden md:flex">PES University</span>
         </Link>
 
@@ -41,7 +41,7 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
     <div className="">
       {item.submenu ? (
         <>
-          <button onClick={toggleSubMenu} className={`flex flex-row items-center p-2 rounded-lg hover-bg-zinc-100 w-full justify-between hover:bg-zinc-100 ${pathname.includes(item.path) ? "bg-zinc-100" : ""}`}>
+          <button onClick={toggleSubMenu} className={`flex flex-row items-center p-2 rounded-lg w-full justify-between hover:bg-violet-600 ${pathname.includes(item.path) ? "bg-violet-500" : ""}`}>
             <div className="flex flex-row space-x-4 items-center">
               {item.icon}
               <span className="font-semibold text-xl  flex">{item.title}</span>
@@ -65,7 +65,7 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
           )}
         </>
       ) : (
-        <Link href={item.path} className={`flex flex-row space-x-4 items-center p-2 rounded-lg hover:bg-zinc-100 ${item.path === pathname ? "bg-zinc-100" : ""}`}>
+        <Link href={item.path} className={`flex flex-row space-x-4 items-center p-2 rounded-lg hover:bg-violet-600 ${item.path === pathname ? "bg-violet-500" : ""}`}>
           {item.icon}
           <span className="font-semibold text-xl flex">{item.title}</span>
         </Link>
