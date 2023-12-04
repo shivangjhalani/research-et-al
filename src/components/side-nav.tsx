@@ -11,10 +11,10 @@ import { Icon } from "@iconify/react";
 
 const SideNav = () => {
   return (
-    <div className="md:w-60 bg-zinc-900 h-screen flex-1 fixed border-r border-gray-500 hidden md:flex">
+    <div className="md:w-60 h-screen flex-1 fixed border-r border-gray-600 bg-zinc-900 hidden md:flex">
       <div className="flex flex-col space-y-6 w-full">
         <Link href="/" className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-gray-500 h-12 w-full">
-          <span className="h-7 w-7 bg-violet-500 rounded-lg" />
+          <span className="h-7 w-7 bg-purple-800 rounded-lg" />
           <span className="font-bold text-xl hidden md:flex">PES University</span>
         </Link>
 
