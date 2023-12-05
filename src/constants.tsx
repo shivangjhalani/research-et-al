@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 
 import { SideNavItem } from "./types";
+import { Post } from "./types";
 
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
@@ -61,5 +62,13 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     title: "CoE",
     path: "/coe",
     icon: <Icon icon="lucide:graduation-cap" width="24" height="24" />,
+  },
+];
+
+export const POSTS: Post[] = [
+  {
+    title: "This is a post",
+    description: "lorem ipsum",
+    year: 1924,
   },
 ];
